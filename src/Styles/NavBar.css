@@ -1,0 +1,32 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 10vh;
+}
+
+.NavBar .links {
+  display: flex;
+  padding: 1rem;
+}
+
+.NavBar .links a {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.NavBar .burgerMenu {
+  padding: 0.5rem;
+}
+
+.NavBar img {
+  padding: 1rem;
+}
+
+.NavBar .links a:visited {
+  padding: 0.5rem;
+  color: white;
+}
