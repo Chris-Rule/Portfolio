@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Styles/NavBar.css";
+import "./NavBar.css";
 import MenuIcon from "../Icons/Menu";
 import { useEffect, useState } from "react";
 import useMediaQuery from "../Hooks/useMediaQuery";

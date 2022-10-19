@@ -1,4 +1,4 @@
-import "../Styles/Page.css";
+import "./NoPathFound.css";
 
 const NoPathFound = () => {
   return <section>NoPathFound</section>;
