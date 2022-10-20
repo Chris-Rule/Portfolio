@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import MenuIcon from "../Icons/Menu";
-import { useEffect, useState } from "react";
 import useMediaQuery from "../Hooks/useMediaQuery";
+import MobileLinks from "./MobileLinks";
 
 const Logo = () => {
   return <img src={require("../Logos/CRR Logo 1 - PNG.png")} alt="CRR Logo" />;
@@ -18,17 +17,16 @@ const DesktopLinks = () => {
   );
 };
 
-const MobileLinks = () => {
-  return <MenuIcon className="burgerMenu" />;
-};
-
-const NavBar = () => {
+const NavBar = ({ dropDownVis, setDropDownVis }) => {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   if (isSmallScreen) {
     return (
       <section className="NavBar">
-        <MobileLinks />
+        <MobileLinks
+          dropDownVis={dropDownVis}
+          setDropDownVis={setDropDownVis}
+        />
         <Logo />
       </section>
     );

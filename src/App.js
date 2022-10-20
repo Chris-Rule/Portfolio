@@ -15,8 +15,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <NavBar />
-        <NavDropDown />
+        <NavBar dropDownVis={dropDownVis} setDropDownVis={setDropDownVis} />
+        <NavDropDown
+          dropDownVis={dropDownVis}
+          setDropDownVis={setDropDownVis}
+        />
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/works" element={<Works />} />

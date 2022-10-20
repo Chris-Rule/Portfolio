@@ -1,0 +1,35 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  color: white;
+  text-decoration: none;
+  height: 10vh;
+  font-size: 2rem;
+}
+
+a:visited {
+  color: white;
+}
+
+li:nth-child(1) {
+  background-color: rgb(20, 20, 20);
+}
+
+li:nth-child(2) {
+  background-color: rgb(40, 40, 40);
+}
+
+li:nth-child(3) {
+  background-color: rgb(60, 60, 60);
+}

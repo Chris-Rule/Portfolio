@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const useMediaQuery = (queryString) => {
-  let mql = window.matchMedia(queryString);
+  const mql = window.matchMedia(queryString);
   const [matches, setMatches] = useState(mql.matches);
 
   const changeHandler = (e) => {
@@ -11,7 +11,7 @@ const useMediaQuery = (queryString) => {
   useEffect(() => {
     mql.addEventListener("change", changeHandler);
     return () => mql.removeEventListener("change", changeHandler);
-  }, [matches]);
+  }, [mql]);
 
   return matches;
 };
