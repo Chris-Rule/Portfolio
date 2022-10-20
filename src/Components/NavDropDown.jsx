@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavDropDown = ({ dropDownVis, setDropDownVis }) => {
   if (dropDownVis) {
     return (
-      <ul>
+      <ul className="NavDropDown">
         <li>
           <Link to="/">About</Link>
         </li>

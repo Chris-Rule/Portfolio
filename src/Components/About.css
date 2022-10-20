@@ -11,6 +11,28 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100vw;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.aboutSection li {
+  display: flex;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.aboutSection ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  padding-left: 0;
 }
 
 .aboutName h1 {
@@ -26,14 +48,66 @@
   text-align: start;
   background-color: rgb(228, 228, 228);
   box-shadow: 2px 2px rgb(138, 138, 138);
-  border-radius: 1rem;
   width: 80vw;
   padding: 1rem;
 }
 
-.aboutSection li {
-  background-color: black;
-  color: white;
-  border-radius: 0.5rem;
-  padding: 0.3rem;
+.aboutText h3 {
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+.aboutText h4 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .head {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .third {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .aboutAll {
+    width: 70vw;
+  }
+
+  .aboutInfoboxes {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    height: fit-content;
+    align-items: stretch;
+  }
+
+  .aboutText {
+    height: auto;
+  }
+
+  .head {
+    border-radius: 1rem 1rem 0 0;
+    width: auto;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+  }
+
+  .first {
+    border-radius: 0 0 0 1rem;
+  }
+
+  .third {
+    border-radius: 0 0 1rem 0;
+  }
 }

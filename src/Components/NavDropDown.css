@@ -1,4 +1,4 @@
-ul {
+ul.NavDropDown {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -7,7 +7,7 @@ ul {
   padding-left: 0;
 }
 
-a {
+.NavDropDown a {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -18,18 +18,18 @@ a {
   font-size: 2rem;
 }
 
-a:visited {
+.NavDropDown a:visited {
   color: white;
 }
 
-li:nth-child(1) {
+.NavDropDown li:nth-child(1) {
   background-color: rgb(20, 20, 20);
 }
 
-li:nth-child(2) {
+.NavDropDown li:nth-child(2) {
   background-color: rgb(40, 40, 40);
 }
 
-li:nth-child(3) {
+.NavDropDown li:nth-child(3) {
   background-color: rgb(60, 60, 60);
 }
