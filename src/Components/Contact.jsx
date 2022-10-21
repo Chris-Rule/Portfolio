@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
@@ -7,21 +7,24 @@ const Contact = () => {
   const [message, setMessage] = useState("Hey, nice website!");
 
   const handleNameChange = (event) => {
-    console.log(event.target.value);
+    setName(event.target.value);
   };
 
   const handleEmailChange = (event) => {
-    console.log(event.target.value);
+    setEmail(event.target.value);
   };
 
   const handleMessageChange = (event) => {
-    console.log(event.target.value);
+    setMessage(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(name, email, message);
   };
+
+  useEffect(() => {
+    console.log(name, email, message);
+  }, [name, email, message]);
 
   return (
     <div>
@@ -62,6 +65,9 @@ const Contact = () => {
       <button type="submit" className="btn btn-primary" form="contact-form">
         Send it!
       </button>
+      <p className="siteWarning">
+        &#40;Form submission currently inactive&#41;
+      </p>
     </div>
   );
 };
