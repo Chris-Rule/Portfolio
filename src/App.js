@@ -26,7 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NoPathFound />} />
         </Routes>
-        <Footer />
+        <Footer className="footer" />
       </div>
     </BrowserRouter>
   );

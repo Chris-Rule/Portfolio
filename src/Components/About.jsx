@@ -39,10 +39,10 @@ const About = () => {
           <section className="aboutText developer second">
             <h3>Page &gt; Front End Developer</h3>
             <p>
-              With over a decades experience in generating and presenting 3D
-              models to produce technical drawings, I have a real appreciation
-              for the importance of a clean and readable layout and user
-              friendly tools.
+              With over a decade of experience in generating complex three
+              dimensional models to produce and present technical drawings, I
+              have a real appreciation for the importance of clean, readable
+              layouts and user friendly tools.
             </p>
             <h4>Tools</h4>
             <ul>
