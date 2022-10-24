@@ -18,24 +18,8 @@ const Contact = () => {
     setMessage(event.target.value);
   };
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
   };
 
   useEffect(() => {
@@ -45,11 +29,10 @@ const Contact = () => {
   return (
     <div className="contactPage">
       <section className="contactPanel">
-        <input type="hidden" name="contact-form" value="contact-form" />
+        <input type="hidden" name="form-name" value="contact-form" />
         <form
           name="contact-form"
           id="contact-form"
-          className="style-panel"
           method="POST"
           data-netlify="true"
           onSubmit={handleSubmit}
@@ -61,16 +44,18 @@ const Contact = () => {
               type="text"
               className="form-control"
               onBlur={handleNameChange}
+              required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Input &gt; E-mail</label>
+            <label htmlFor="email">Input &gt; E-mail</label>
             <input
               name="email"
               type="email"
               className="form-control"
               onBlur={handleEmailChange}
               aria-describedby="emailHelp"
+              required
             />
           </div>
           <div className="form-group">
@@ -80,6 +65,7 @@ const Contact = () => {
               className="form-control"
               rows="10"
               onBlur={handleMessageChange}
+              required
             ></textarea>
           </div>
         </form>
