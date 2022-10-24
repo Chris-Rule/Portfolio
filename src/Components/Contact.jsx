@@ -12,18 +12,24 @@ const Contact = () => {
         <input type="hidden" name="form-name" value="contact v1" />
 
         <div>
-          <label htmlFor="name">Name</label>
-          <input id="name" type="text" name="first-name" />
+          <label>
+            Name
+            <input id="name" type="text" name="first-name" />
+          </label>
         </div>
 
         <div>
-          <label htmlFor="email">Email</label>
-          <input id="email" type="email" name="email" />
+          <label>
+            Email
+            <input id="email" type="email" name="email" />
+          </label>
         </div>
 
         <div>
-          <label htmlFor="message">Message</label>
-          <textarea type="message" name="message" id="message" />
+          <label>
+            Message
+            <textarea type="message" name="message" id="message"></textarea>
+          </label>
         </div>
 
         <button type="submit">Submit the results</button>
