@@ -40,6 +40,7 @@ const Contact = () => {
             <label htmlFor="name">Input &gt; Name</label>
             <input
               name="name"
+              id="name"
               type="text"
               className="form-control"
               onBlur={handleNameChange}
@@ -50,6 +51,7 @@ const Contact = () => {
             <label htmlFor="email">Input &gt; E-mail</label>
             <input
               name="email"
+              id="email"
               type="email"
               className="form-control"
               onBlur={handleEmailChange}
@@ -61,6 +63,7 @@ const Contact = () => {
             <label htmlFor="message">Input &gt; Message</label>
             <textarea
               name="message"
+              id="message"
               className="form-control"
               rows="10"
               onBlur={handleMessageChange}
