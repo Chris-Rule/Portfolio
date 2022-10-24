@@ -29,13 +29,13 @@ const Contact = () => {
   return (
     <div className="contactPage">
       <section className="contactPanel">
-        <input type="hidden" name="form-name" value="contact-form" />
         <form
-          name="contact-form"
+          name="contact"
           method="POST"
           Content-Type="application/x-www-form-urlencoded"
           onSubmit={handleSubmit}
         >
+          <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
             <label htmlFor="name">Input &gt; Name</label>
             <input
