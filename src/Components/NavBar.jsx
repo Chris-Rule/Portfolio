@@ -18,7 +18,7 @@ const DesktopLinks = () => {
 };
 
 const NavBar = ({ dropDownVis, setDropDownVis }) => {
-  const isSmallScreen = useMediaQuery("(max-width: 600px)");
+  const isSmallScreen = useMediaQuery("(max-width: 700px)");
 
   if (isSmallScreen) {
     return (
