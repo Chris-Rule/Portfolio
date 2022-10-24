@@ -30,9 +30,9 @@ const Contact = () => {
     <div className="contactPage">
       <section className="contactPanel">
         <form
+          name="contact-form"
           id="contact-form"
           className="style-panel"
-          name="contact"
           method="POST"
           data-netlify="true"
           onSubmit={handleSubmit}
@@ -75,7 +75,12 @@ const Contact = () => {
           <p>They just wanted to say:</p>
           <p>{message}</p>
           <p>You can contact them at: {email}</p>
-          <button type="submit" className="btn btn-primary" form="contact-form">
+          <button
+            name="form-submit"
+            type="submit"
+            className="btn btn-primary"
+            form="contact-form"
+          >
             Send it!
           </button>
           <p className="siteWarning">
