@@ -45,6 +45,7 @@ const Contact = () => {
   return (
     <div className="contactPage">
       <section className="contactPanel">
+        <input type="hidden" name="contact-form" value="contact-form" />
         <form
           name="contact-form"
           id="contact-form"
