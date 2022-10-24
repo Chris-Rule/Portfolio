@@ -32,9 +32,8 @@ const Contact = () => {
         <input type="hidden" name="form-name" value="contact-form" />
         <form
           name="contact-form"
-          id="contact-form"
           method="POST"
-          data-netlify="true"
+          Content-Type="application/x-www-form-urlencoded"
           onSubmit={handleSubmit}
         >
           <div className="form-group">
