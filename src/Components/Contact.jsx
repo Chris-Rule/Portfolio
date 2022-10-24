@@ -29,10 +29,18 @@ const Contact = () => {
   return (
     <div className="contactPage">
       <section className="contactPanel">
-        <form id="contact-form" className="style-panel" onSubmit={handleSubmit}>
+        <form
+          id="contact-form"
+          className="style-panel"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit={handleSubmit}
+        >
           <div className="form-group">
             <label htmlFor="name">Input &gt; Name</label>
             <input
+              name="name"
               type="text"
               className="form-control"
               onBlur={handleNameChange}
@@ -41,6 +49,7 @@ const Contact = () => {
           <div className="form-group">
             <label htmlFor="exampleInputEmail1">Input &gt; E-mail</label>
             <input
+              name="email"
               type="email"
               className="form-control"
               onBlur={handleEmailChange}
@@ -50,6 +59,7 @@ const Contact = () => {
           <div className="form-group">
             <label htmlFor="message">Input &gt; Message</label>
             <textarea
+              name="message"
               className="form-control"
               rows="10"
               onBlur={handleMessageChange}
@@ -65,13 +75,13 @@ const Contact = () => {
           <p>They just wanted to say:</p>
           <p>{message}</p>
           <p>You can contact them at: {email}</p>
+          <button type="submit" className="btn btn-primary" form="contact-form">
+            Send it!
+          </button>
+          <p className="siteWarning">
+            &#40;Form submission currently inactive&#41;
+          </p>
         </section>
-        <button type="submit" className="btn btn-primary" form="contact-form">
-          Send it!
-        </button>
-        <p className="siteWarning">
-          &#40;Form submission currently inactive&#41;
-        </p>
       </section>
     </div>
   );
