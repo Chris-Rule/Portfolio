@@ -14,21 +14,21 @@ const Contact = () => {
         <div>
           <label>
             Name
-            <input id="name" type="text" name="first-name" />
+            <input type="text" name="first-name" />
           </label>
         </div>
 
         <div>
           <label>
             Email
-            <input id="email" type="email" name="email" />
+            <input type="email" name="email" />
           </label>
         </div>
 
         <div>
           <label>
             Message
-            <textarea type="message" name="message" id="message"></textarea>
+            <textarea type="message" name="message"></textarea>
           </label>
         </div>
 
