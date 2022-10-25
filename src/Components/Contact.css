@@ -1,4 +1,4 @@
-.contactPage {
+.contact-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,52 +6,82 @@
   font-size: 1.2rem;
 }
 
-.contactPage .contactPanel {
+.contact-page a svg {
+  padding: 1rem;
+  width: 5vh;
+  height: 5vh;
+}
+
+.contact-page .social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 2rem;
+  width: 90vw;
+  max-width: 600px;
   background-color: rgb(228, 228, 228);
   box-shadow: 2px 2px rgb(138, 138, 138);
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
-.contactPage #contact-form {
+.contact-page .contact-panel {
+  margin-top: 0;
+  width: 90vw;
+  max-width: 600px;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 2px 2px rgb(138, 138, 138);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.contact-page label {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: start;
-  width: 80vw;
   padding: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.contactPage .form-control {
-  display: flex;
-  width: fit-content;
-  width: auto;
-}
-
-.contactPage label {
-  font-size: 1.4rem;
+.contact-page input {
+  margin: 0;
+  margin-top: 0.2rem;
   padding: 0.2rem;
-  padding-left: 0;
-  font-weight: bold;
+  width: 98%;
+  font-size: 1.2rem;
+  border: 2px solid grey;
+  border-radius: 0.5rem;
+  outline-color: black;
 }
 
-.contactPage .form-group {
+.contact-page textarea {
+  margin: 0;
+  margin-top: 0.2rem;
+  padding: 0.2rem;
+  width: 98%;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border: 2px solid grey;
+  border-radius: 0.5rem;
+  resize: none;
+  outline-color: black;
+}
+
+.contact-page .button-container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  justify-content: flex-end;
+  margin-top: -3.7rem;
+  padding-right: 1.7rem;
+  margin-bottom: 2rem;
 }
 
-.contactPage .messagePreview {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  text-align: left;
-}
-
-.contactPage .messagePreview h3 {
+.contact-page button {
+  height: 2rem;
+  width: 5rem;
+  font-size: 1.2rem;
   font-weight: bold;
-}
-
-.contactPage .messagePreview p {
-  margin-top: 0.1rem;
+  color: white;
+  background-color: black;
+  border-radius: 0.4rem;
 }
