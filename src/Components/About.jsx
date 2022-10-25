@@ -15,7 +15,7 @@ const About = () => {
           <p>
             It feels a little strange to make a website about yourself, but I
             feel I've built up a few skills over the years and I'm excited to
-            build a place to put them all under one roof.
+            make a place to put them all under one roof.
           </p>
         </section>
         <section className="aboutInfoboxes">
