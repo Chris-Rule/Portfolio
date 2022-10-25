@@ -14,8 +14,8 @@ const About = () => {
           <p>Hello there! I'm Chris, nice to meet you.</p>
           <p>
             It feels a little strange to make a website about yourself, but I
-            feel I've built up a lot of skills over the years and I'm excited to
-            build a place to put them under one roof.
+            feel I've built up a few skills over the years and I'm excited to
+            build a place to put them all under one roof.
           </p>
         </section>
         <section className="aboutInfoboxes">
@@ -23,7 +23,7 @@ const About = () => {
             <h3>Page &gt; Engineer</h3>
             <p>
               I'm a little bit obsessed with how things work, and I love
-              breaking down a challenge so I can solve a piece at a time.
+              breaking down a challenge so I can solve it one piece at a time.
             </p>
             <h4>Projects</h4>
             <ul>
