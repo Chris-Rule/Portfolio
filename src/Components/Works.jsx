@@ -23,8 +23,20 @@ const Works = () => {
               </div>
             </div>
             <div className="link-container">
-              <a href={project.projectURL}>Project</a>
-              <a href={project.githubURL}>Github</a>
+              <a
+                href={project.projectURL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Project
+              </a>
+              <a
+                href={project.githubURL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
             </div>
           </section>
         );
