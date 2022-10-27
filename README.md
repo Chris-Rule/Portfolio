@@ -6,7 +6,19 @@
 
 I wanted to piece this project together as a simple landing page to provide a brief insight into myself, the work I do and my interests. It's a single page application with no back-end at the time of writing.
 
-This project has been bootstrapped with React, so I've left all of the out of the box react README information below:
+# Project Installation
+
+This project has been built to run on Node.js with Node Package Manager. To install all requisite dependencies after cloning the repository please run:
+
+### `npm install`
+
+# Dependency
+
+| Dependency   | Version  |
+| :----------- | :------- |
+| `Jest`       | `5.16.5` |
+| `React`      | `18.2.0` |
+| `web-vitals` | `2.1.4`  |
 
 # Getting Started with Create React App
 
