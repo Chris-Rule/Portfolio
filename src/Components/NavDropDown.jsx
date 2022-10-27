@@ -2,17 +2,29 @@ import "./NavDropDown.css";
 import { Link } from "react-router-dom";
 
 const NavDropDown = ({ dropDownVis, setDropDownVis }) => {
+  const handleClick = () => {
+    setDropDownVis(() => {
+      return false;
+    });
+  };
+
   if (dropDownVis) {
     return (
       <ul className="NavDropDown">
         <li>
-          <Link to="/">About</Link>
+          <Link to="/" onClick={() => handleClick()}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/works">Works</Link>
+          <Link to="/works" onClick={() => handleClick()}>
+            Works
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" onClick={() => handleClick()}>
+            Contact
+          </Link>
         </li>
       </ul>
     );
