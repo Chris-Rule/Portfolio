@@ -17,7 +17,7 @@ const projects = {
       projectID: 0,
       name: "NC-News",
       description: [
-        "This was my first real full-stack project, assembled during my time at the Northcoders bootcamp I attended in 2022",
+        "This was my first real full-stack project, assembled during my time at the Northcoders bootcamp I attended in 2022.",
         "It was an intense course, and it was great to see our newly-acquired knowledge come together in this starter project.",
         "The back-end was built out first using Node.js, PostgreSQL and Express, with a heavy emphasis on Test Driven Development, then later we built up the front end with React.",
         "There is definitely more work to be done, particularly on the styling front, but I feel I learnt a lot of what not to do on this project, and I hope to apply those lessons as I move forward.",
