@@ -1,0 +1,85 @@
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.works .project-panel {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 2px 2px rgb(138, 138, 138);
+  border-radius: 1rem;
+  width: 80vw;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+
+.works .project-panel h1 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.works .project-body {
+  display: flex;
+}
+
+.works .project-panel .img-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.works .project-panel img {
+  margin: 1rem;
+  background-color: white;
+  align-items: center;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 0.5rem;
+}
+
+.works .link-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.works .link-container a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 0.4rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .works .project-body {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .works .project-panel {
+    max-width: 900px;
+  }
+
+  .works .project-body {
+    display: flex;
+    flex-direction: row;
+  }
+}

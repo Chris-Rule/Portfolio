@@ -66,7 +66,7 @@ const About = () => {
             <h4>Contributions</h4>
             <ul>
               <li>Technology Presentations</li>
-              <li>Excel Training</li>
+              <li>Software Training</li>
               <li>Apprentices</li>
               <li>STEM Ambassadorship</li>
               <li>Coding Content Creation</li>
